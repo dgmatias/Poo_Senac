@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100% !important;
+}
+
+.login {
+    flex-grow: 1 !important;
+    
+}
+.login form {
+    border: 1px solid #ccc;
+    padding: 50px;
+    border-radius: 1.25rem;
+
+}
