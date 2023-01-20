@@ -1,9 +1,13 @@
 
 package br.com.biblioteca.DAO;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+//JBDC é uma api que reune um conjunto de classes que nos possibilita a se conectar com banco de dados relacionais
+
+import java.sql.Connection; // Interface que representa uma conexão ao banco de dados.
+
+import java.sql.DriverManager; // é a responsável por se comunicar com todos os drivers que você deixou disponível.
+
+import java.sql.SQLException; 
 
 
 public class ConexaoDAO {

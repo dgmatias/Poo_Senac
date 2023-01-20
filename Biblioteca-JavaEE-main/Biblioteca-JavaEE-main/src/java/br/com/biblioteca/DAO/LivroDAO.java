@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class LivroDAO {
     Connection conn;
-    PreparedStatement pstm; //Preparando a conexão para depois executar o sql.
+    PreparedStatement pstm; 
     ResultSet rs;
     ArrayList<LivroDTO> lista = new ArrayList<>();
     
@@ -20,9 +20,9 @@ public class LivroDAO {
         conn = new ConexaoDAO().conexaoBD();
         
         try{
-            pstm = conn.prepareStatement(sql);
+            pstm = conn.prepareStatement(sql); //Representa as instruções sql que serão executadas.
             pstm.setString(1,livroDTO.getLivro());
-            pstm.execute();
+            pstm.execute(); //Executa a função sql
             pstm.close(); //fecha a conexão.
         } catch(SQLException e){
             
